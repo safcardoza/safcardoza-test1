@@ -56,8 +56,9 @@ function dsCript(stringDesencriptada) {
 //botón copiar
 
 function copiarJS() {
-  mensaje.select();
-  navigator.clipboard.writeText(mensaje.value)
+  mensaje.select
+  mensaje.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(mensaje.value);
   mensaje.value = "";
-  alert("Texto Copiado")
+  alert("Texto Copiado");
 }
